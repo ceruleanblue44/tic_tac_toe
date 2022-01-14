@@ -40,9 +40,16 @@ function currentPlayerChange() {
 
 function gameStatusMsg() {
   const gameStatus = document.querySelector('.game-status');
-  gameStatus.textContent = `${currentPlayer}'s turn!`
+  gameStatus.textContent = `${currentPlayer}'s turn!`;
+  if (gameState.every(sq => !(sq === ''))) gameStatus.textContent = `Game over!`
 }
 
 function gameStateUpdate() {
+  // gameState[clickedSquareIndex] = currentPlayer;
+}
 
+function checkGameStatus() {
+  switch () {
+    
+  }
 }
